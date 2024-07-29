@@ -46,6 +46,7 @@ void displayLeaderboard(Texture& textures, sf::RenderWindow& gameWindow, Board& 
 
     string displayText = "Leaderboard\n\n";
     int rank = 1;
+    //Iterate through the data vector storing leaderboard data and display text based on rank
     for (int i = 0; i < data.size(); i += 2) {
         string string_rank = to_string(rank);
         displayText += string_rank + ".\t" + data[i] + "\t" + data[i + 1] + "\n\n";
@@ -85,6 +86,7 @@ void editLeaderboard(const string& timeName) {
 
     vector<string> data;
     string line;
+    //Read data into a vector
     while (getline(file, line)) {
         data.push_back(line);
     }

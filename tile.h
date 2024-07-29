@@ -21,6 +21,7 @@ public:
     bool mineRevealed;
 
     Tile(float x, float y){
+        //Sets initial values for a new tile object
         hasFlag = false;
         hasMine = false;
         number = 0;

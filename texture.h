@@ -11,6 +11,7 @@ private:
     map<string, sf::Texture> textures;
 
 public:
+    //loads a texture based on a provided filename
     void loadTexture(const string& filename) {
         sf::Texture texture;
         if (texture.loadFromFile(filename)) {
